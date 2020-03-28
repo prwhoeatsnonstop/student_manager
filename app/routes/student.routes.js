@@ -1,5 +1,5 @@
 module.exports = app => {
-    const student_teacher = require("../controllers/student_teacher.controller.js");
+    const student_teacher = require("../controllers/student_teacherController.js");
     const { Op } = require("sequelize");
   
     var router = require("express").Router();
