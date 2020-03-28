@@ -31,7 +31,7 @@ The default config is:
 	HOST:     'localhost', 	    // database host
 	USER:     'root',           // your database username
 	PASSWORD: '123456',        // your database password
-	db:       'testdb'       // your database name
+	DB:       'testdb'       // your database name
 
 User can change accordingly
 ```
