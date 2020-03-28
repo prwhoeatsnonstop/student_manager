@@ -52,5 +52,6 @@ npm test
 ```
 - https://bezkoder.com/node-js-express-sequelize-mysql/ (Node, Express, Sequelize, MySQL stack reference)
 - https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize 
+- https://sequelize.org/master/manual/advanced-many-to-many.html#many-to-many-to-many-relationships-and-beyond
 
 ```
