@@ -49,16 +49,16 @@ module.exports = (sequelize, Sequelize) => {
     Student.hasMany(StudentTeacher);
     Teacher.hasMany(StudentTeacher);
 
-    const NotificationStudentTeacher = sequelize.define("notification", {
-      id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-      },
-      body: {
-        type: Sequelize.STRING,
-      }
-    });
+    // const Notification = sequelize.define("notification", {
+    //   id: {
+    //     type: Sequelize.INTEGER,
+    //     primaryKey: true,
+    //     autoIncrement: true
+    //   },
+    //   body: {
+    //     type: Sequelize.STRING,
+    //   }
+    // });
     
     //apply a Super Many-to-Many relationship between Notification and StudentTeacher (https://sequelize.org/master/manual/advanced-many-to-many.html#many-to-many-to-many-relationships-and-beyond)
     // NotificationStudentTeacher.belongsToMany(StudentTeacher, { through: NotificationStudentTeacher });
@@ -71,7 +71,7 @@ module.exports = (sequelize, Sequelize) => {
     return Teacher;
     return Student;
     return StudentTeacher;
-    // return NotificationStudentTeacher; 
+    // return Notification; 
   };
 
 //https://sequelize.readthedocs.io/en/v3/api/associations/belongs-to-many/
