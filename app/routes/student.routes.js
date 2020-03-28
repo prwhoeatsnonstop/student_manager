@@ -1,5 +1,9 @@
 module.exports = app => {
     const students = require("../controllers/student.controller.js");
+    const register_controller = require("../controllers/registerController");
+    const suspend_controller = require('../controllers/suspendController');
+    const commonstudents_controller = require('../controllers/commonstudentsController');
+    const get_notifications_controller = require('../controllers/getnotificationsController');
     const { Op } = require("sequelize");
   
     var router = require("express").Router();

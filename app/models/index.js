@@ -19,6 +19,10 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.students = require("./student.model.js")(sequelize, Sequelize);
+db.students = require("./student.js")(sequelize, Sequelize);
+db.teachers = require("./teacher.js")(sequelize, Sequelize);
+db.student_teacher = require("./student_teacher.js")(sequelize, Sequelize);
+db.notifications = require("./notification.js")(sequelize, Sequelize);
+
 
 module.exports = db;
