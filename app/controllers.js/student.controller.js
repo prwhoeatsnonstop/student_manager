@@ -2,6 +2,7 @@ const db = require("../models");
 const Student = db.students;
 const Op = db.Sequelize.Op;
 
+
 // REGISTER A STUDENT
 exports.create = (req, res) => {
     // Validate request
@@ -13,14 +14,14 @@ exports.create = (req, res) => {
     }
   
     // Register a student 
-    const tutorial = {
+    const student = {
       student_email: req.body.student_email,
       teacher_email: req.body.teacher_email,
       is_Suspend: req.body.is_Suspend ? req.body.is_Suspend : false
     };
   
     // Save student in the database
-    Student.create(tutorial)
+    Student.create(student)
       .then(data => {
         res.send(data);
       })
@@ -35,7 +36,7 @@ exports.create = (req, res) => {
 // GET ALL COMMON STUDENTS
 exports.findAll = (req, res) => {
     const student_email = req.query.student_email;
-    //like is smth like does the keyword exist in the db
+    //like is does the keyword exist in the db
     var condition = student_email ? { student_email: { [Op.like]: `%${student_email}%` } } : null;
   
     Student.findAll({ where: condition })
@@ -76,3 +77,14 @@ exports.update = (req, res) => {
   };
 
 // RETRIEVE LIST OF STUDENTS WHO CAN RECEIVE A GIVEN NOTIFICATION
+exports.findAll({
+    where: {
+        [Op.or]: [
+            //{student with @mentioned}
+            //{registered with teacher}
+        ]
+    }
+}) = (req, res) => {
+
+}
+

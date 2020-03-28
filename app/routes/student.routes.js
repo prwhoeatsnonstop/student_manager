@@ -4,10 +4,6 @@ module.exports = app => {
   
     var router = require("express").Router();
   
-    // HOME PAGE
-    // router.get('/', function (req, res) {
-    //     res.render('index', {title: 'Student Registration'});
-    // });
 
     // REGISTER A STUDENT
     router.post("/register", students.create);
@@ -16,14 +12,14 @@ module.exports = app => {
     router.get("/commonstudents", students.findAll);
   
     // SUSPEND A SPECIFIED STUDENT
-    router.post("/suspend", students.create);
+    router.post("/suspend", students.update);
   
     // RETRIEVE LIST OF STUDENTS WHO CAN RECEIVE A GIVEN NOTIFICATION
     //https://sequelize.org/master/manual/model-querying-basics.html#the-basics
     router.post("/retrievefornotifications", students.findAll({
         where: {
             [Op.or]: [
-                //{student with @ mentioned}
+                //{student with @mentioned}
                 //{registered with teacher}
             ]
         }
