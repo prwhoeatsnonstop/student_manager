@@ -9,11 +9,11 @@ v13.8.0
 
 ## How to run
 
-###### NodeJs
+###### nodejs
 ```
-    Install NodeJs
+ Install nodejs
 ```
-###### DB
+###### Database
 ```
     Install MySql DB
 ```
@@ -38,7 +38,7 @@ User can change accordingly
 
 ##### Run unit test
 ```
-    npm test
+npm test
 ```
 
 ###### Dependency modules
@@ -50,7 +50,7 @@ User can change accordingly
 
 ## Reference
 ```
-    1) https://bezkoder.com/node-js-express-sequelize-mysql/ (Node, Express, Sequelize, MySQL stack reference)
-    2) https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize 
+- https://bezkoder.com/node-js-express-sequelize-mysql/ (Node, Express, Sequelize, MySQL stack reference)
+- https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize 
 
 ```
