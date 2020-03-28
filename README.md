@@ -50,7 +50,7 @@ User can change accordingly
 
 ## Reference
 ```
-    https://bezkoder.com/node-js-express-sequelize-mysql/ (Node, Express, Sequelize, MySQL stack reference)
-    //https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize 
+    1) https://bezkoder.com/node-js-express-sequelize-mysql/ (Node, Express, Sequelize, MySQL stack reference)
+    2) https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize 
 
 ```
