@@ -21,7 +21,7 @@ exports.create = (req, res) => {
     };
   
     // Save student in the database
-    Student.create(students)
+    Student_Teacher.create(students)
       .then(data => {
         res.send(data);
       })
@@ -39,7 +39,7 @@ exports.findAll = (req, res) => {
     //like is does the keyword exist in the db
     var condition = student_email ? { student_email: { [Op.like]: `%${student_email}%` } } : null;
   
-    Student.findAll({ where: condition })
+    Student_teacher.findAll({ where: condition })
       .then(data => {
         res.send(data);
       })
@@ -55,7 +55,7 @@ exports.findAll = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
   
-    Student.update(req.body, {
+    Student_Teacher.update(req.body, {
       where: { id: id }
     })
       .then(num => {
@@ -86,6 +86,6 @@ exports.findAll({
     }
 }) = (req, res) => {
 
-}
+};
 
 
