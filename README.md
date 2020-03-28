@@ -11,18 +11,18 @@ v13.8.0
 
 ###### nodejs
 ```
- Install nodejs
+Install nodejs (https://nodejs.org/en/)
 ```
 ###### Database
 ```
-    Install MySql DB
+Install MySql (https://dev.mysql.com/downloads/mysql/)
 ```
 ##### Run application locally
 ```
-    git clone https://github.com/prwhoeatsnonstop/student_manager.git
-    cd student_manager
-    npm install
-    node server
+git clone https://github.com/prwhoeatsnonstop/student_manager.git
+cd student_manager
+npm install
+node server
 ```
 ##### Database Configuration
 ```
@@ -43,9 +43,9 @@ npm test
 
 ###### Dependency modules
 ```
-- express: Web server framework
-- mysql: Database connection 
-- mocha: Unit test
+- Express.js: Web server framework
+- MySQL: Database connection 
+- Mocha: Unit test
 ```
 
 ## Reference
